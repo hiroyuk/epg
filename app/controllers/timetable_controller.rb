@@ -9,7 +9,6 @@ class TimetableController < ApplicationController
 
   def programs
     programs = Program.where(['end > ?', Time.current]).map do |program|
-      p program.start.class
       {
           'id' => program.id,
           'start' => program.start.in_time_zone('Japan'),
