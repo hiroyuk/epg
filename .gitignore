@@ -16,7 +16,9 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+/.idea
 /vendor/bundler
+/vendor/assets/bower_components
 
 # Ignore Byebug command history file.
 .byebug_history
